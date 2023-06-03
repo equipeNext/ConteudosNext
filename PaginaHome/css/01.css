@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    background-color: dimgray;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+p {
+    white-space: pre-line;
+}
+
+.TextImage img {
+    background-color: white;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.TextImage {
+    background-color: white;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 100px;
+    white-space: pre-line;
+}
+
+nav {
+    background-color: dimgray;
+
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
