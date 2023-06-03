@@ -15,26 +15,111 @@ p {
     white-space: pre-line;
 }
 
-.TextImage img {
-    background-color: white;
-    flex-shrink: 0;
-    margin-right: 10px;
-}
-
 .TextImage {
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
-    justify-content: flex-end;
-    margin-right: 100px;
-    margin-top: 100px;
-    white-space: pre-line;
 }
 
-nav {
-    background-color: dimgray;
+.TextImage p {
+    flex: 1;
+    margin-right: 20px;
+}
 
+.TextImage img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+nav,
+footer {
+    background-color: dimgray;
 }
 
 .navbar-collapse {
     display: flex;
     justify-content: flex-end;
+}
+
+footer {
+    padding: 5px 2px 2px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100px;
+    margin: 0 5px;
+}
+
+@media (max-width:700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100px;
+        text-align: center;
+        margin: 10px;
+    }
 }
