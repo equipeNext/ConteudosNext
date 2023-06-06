@@ -6,14 +6,10 @@
 /* Imagem junto com o texto */
 section {
     display: flex;
-    background-color: #8711fb;
+    background-color: dimgray;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
-}
-
-.nav-bar a {
-    --bs-navbar-active-color: #ffffffe6;
 }
 
 p {
@@ -47,22 +43,23 @@ p {
 /*****************/
 nav,
 footer {
-    background-color: #8711fb;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
+    background-color: dimgray;
+}
+.footerContainer{
+    height: 100px;
+    padding: 20px;
 }
 
 .navbar-collapse {
     display: flex;
     justify-content: flex-end;
-
 }
 
 footer {
     padding: 5px 2px 2px;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .socialIcons {
@@ -72,9 +69,9 @@ footer {
 
 .socialIcons a {
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     background-color: white;
-    margin: 10px;
+    margin: 10px ;
     border-radius: 50%;
 }
 
@@ -87,7 +84,6 @@ footer {
 .socialIcons a:hover {
     background-color: #111;
     transition: 0.5s;
-
 }
 
 .socialIcons a:hover i {
@@ -116,13 +112,12 @@ footer {
 
 .footerBottom {
     background-color: black;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
 .footerBottom p {
     color: white;
-
 }
 
 .designer {
